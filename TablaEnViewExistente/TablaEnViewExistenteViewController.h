@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TablaEnViewExistenteViewController : UIViewController
+@interface TablaEnViewExistenteViewController : UIViewController<UITableViewDataSource, UITableViewDelegate> {
+    
+}
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) id detailItem;
+@property (strong, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+@property (strong, nonatomic) IBOutlet UIView *studentForm;
+@property (strong, nonatomic) IBOutlet UIView *viewParentPortal;
 
 @end
